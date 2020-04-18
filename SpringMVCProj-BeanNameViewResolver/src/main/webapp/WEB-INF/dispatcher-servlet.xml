@@ -25,6 +25,7 @@
 
 <!-- View class cfg -->
 <bean id="excelView" class="com.nt.view.EmployeeExcelView"/>
+<bean id="pdfView" class="com.nt.view.EmployeePdfView"/>
 
 <!-- ViewResolver cfg -->
 <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
