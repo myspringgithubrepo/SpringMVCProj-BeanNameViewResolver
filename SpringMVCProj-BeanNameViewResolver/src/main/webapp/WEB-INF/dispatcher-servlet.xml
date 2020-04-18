@@ -8,6 +8,7 @@
 <props>
 <prop key="welcome.htm">pvc</prop>
 <prop key="getAllEmp.htm">fec</prop>
+<prop key="report.htm">vc</prop>
 </props>
 </property>
 </bean>
@@ -18,7 +19,17 @@
 <bean id="fec" class="com.nt.controller.FetchEmpController">
 <constructor-arg ref="empService"/>
 </bean>
+<bean id="vc" class="com.nt.controller.ViewController">
+<constructor-arg ref="empService"/>
+</bean>
+
+<!-- View class cfg -->
+<bean id="excelView" class="com.nt.view.EmployeeExcelView"/>
+
 <!-- ViewResolver cfg -->
+<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+
+
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <property name="prefix" value="/WEB-INF/pages/"/>
 <property name="suffix" value=".jsp"></property>

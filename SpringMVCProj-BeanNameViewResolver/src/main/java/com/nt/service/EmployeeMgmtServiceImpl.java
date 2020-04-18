@@ -14,7 +14,6 @@ public final class EmployeeMgmtServiceImpl implements EmployeeMgmtService {
 	public EmployeeMgmtServiceImpl(EmployeeDao dao) {
 		this.dao = dao;
 	}
-	@Override
 	public List<EmployeeDTO> frtchAllEmps() {
 		List<EmployeeDTO> listDTO=new ArrayList<EmployeeDTO>();
 		List<EmployeeBO> listBO=null;
