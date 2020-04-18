@@ -24,7 +24,7 @@ public class EmployeePdfView extends AbstractPdfView {
 		Paragraph p=new Paragraph("Employee Report");
 		doc.add(p);
 		List<EmployeeDTO> listDTO=(List<EmployeeDTO>) map.get("listDTO");
-		//craete table and add to Document
+		//create table and add to Document
 		PdfPTable table=new PdfPTable(5);
 		table.addCell("SR. NUM");
 		table.addCell("EMP NUM");
